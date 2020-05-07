@@ -3,6 +3,7 @@ var path = require("path");
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
@@ -11,6 +12,15 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     //filename: "bundle.js",
     publicPath: "/dist"
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    hot: true,
+    historyApiFallback: true,
+    //contentBase: [path.join(__dirname, './index.html')],
+    watchContentBase: true,
+    noInfo: true
   },
   module: {
     rules: [
@@ -28,6 +38,13 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+            name: '[name].[ext]?[hash]'
+        }
+      }
     ],
   },
   optimization: {
@@ -40,5 +57,10 @@ module.exports = {
       filename: 'style.css'
       //chunkFilename: '[id].css',
     }),
+    new HtmlWebpackPlugin({
+      //title: 'Custom template',
+      // Load a custom template (lodash by default)
+      template: './index.html'
+    })
   ],
 };

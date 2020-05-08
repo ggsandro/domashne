@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --mode development",
+    "start": "npm run build && webpack-dev-server --config webpack.config.js --mode development",
     "start:dist": "http-server dist --port ${PORT:-8080}",
     "build": "webpack --mode production",
     "preview": "npm run build && npm run start:dist"

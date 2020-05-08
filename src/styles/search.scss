@@ -1,0 +1,23 @@
+.search{
+  &__wrapper{
+    padding: 64px 0;
+  }
+  &__form{
+    width: 100%;
+    display: flex;
+  }
+  &__product{
+
+  }
+  &__place{
+
+  }
+  &__submit{
+
+  }
+  &__input{
+    font-size: 35px;
+    padding: 10px 20px;
+    color: #1e2b10;
+  }
+}

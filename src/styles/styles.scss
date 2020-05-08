@@ -1,6 +1,7 @@
 @import "./normalize.css";
-@import "./skeleton.css";
+@import "./milligram/milligram.sass";
 
-body{
-  background-color: green;
-}
+@import "./base.scss";
+@import "./header.scss";
+@import "./search.scss";
+@import "./footer.scss";

@@ -1,4 +1,5 @@
 @mixin button($color,$borderColor,$background:transparent,$padding:10px,$borderRad:5px){
+  cursor: pointer;
   color: $color;
   background: $background;
   text-decoration: none;

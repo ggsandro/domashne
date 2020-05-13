@@ -30,6 +30,8 @@
 
   <base href="/">
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <meta name="theme-color" content="#ffffff">
  
 </head>
@@ -44,10 +46,10 @@
           </div>
           <div class="header__nav">
             <div class="header__nav-account">
-              <a href="/account" class="header__nav-link">Мой Профиль</a>
+              <a href="/account" class="header__nav-link">Мій Профіль</a>
             </div>
             <div class="header__nav-add">
-              <a href="/add" class="header__nav-link">Подать Обьявление</a>
+              <a href="/add" class="header__nav-link">Додати Оголошення</a>
             </div>
           </div>
         </div>
@@ -59,19 +61,58 @@
         <div class="search__wrapper">
           <form class="search__form" action="/search" method="post">
             <div class="search__product">
-              <input type="text" class="search__input">
+              <input type="text" placeholder="Молоко" class="search__input">
             </div>
             <div class="search__place">
-              <input type="text" class="search__input">
+              <input type="text" placeholder="Вся Україна" class="search__input">
             </div>
             <div class="search__submit">
-              <input type="submit" class="search__btn">
+              <input type="submit" class="search__submit-btn" value="Пошук">
             </div>
           </form>
         </div>
       </div>
     </section>
 
+    <section class="near">
+      <div class="container">
+        <div class="near__wrapper">
+          <h2 class="near__title">Поруч з Вами продають:</h2>
+          <div class="near__products">
+            
+            <div class="near__products-item">
+
+              <section class="card">
+                <a href="" class="card__overlay">
+                  <div class="card__wrapper">
+                    <h2 class="card__title">Творог домашній</h2>
+                    <div class="card__info">
+                      <p class="card__info-price">150 грн</p>
+                      <p class="card__info-place">Боярка, Київська обл.</p>
+                    </div>
+                  </div>
+                </a>
+              </section>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__links">
+            <a href="" class="footer__links-link">Допомога та Зворотній зв'язок</a>
+            <a href="" class="footer__links-link">Умови користування</a>
+            <a href="" class="footer__links-link">Політика конфіденційності</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 

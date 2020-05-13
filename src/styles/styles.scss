@@ -1,7 +1,9 @@
 @import "./normalize.css";
-@import "./milligram/milligram.sass";
+//@import "./milligram/milligram.sass";
 
 @import "./base.scss";
 @import "./header.scss";
 @import "./search.scss";
+@import "./near-me.scss";
+@import "./card.scss";
 @import "./footer.scss";

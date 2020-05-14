@@ -1,0 +1,30 @@
+@import './theme.scss';
+
+.footer{
+  position: relative;
+  background-color: $footer-background-color;
+
+  &__wrapper{
+    padding: 32px 0;
+  }
+  &__links{
+    display: flex;
+    flex-wrap: wrap;
+
+    &-link{
+      color: $search-text-color;
+      font-size: 18px;
+      opacity: 0.8;
+      text-decoration: none;
+
+      padding: 20px;
+      transition: opacity 0.5s ease-in-out;
+
+      &:hover{
+        color: $search-text-color;
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import './theme.scss';
+@import './mixins.scss';
+
+.near{
+  &__wrapper{
+    padding: 64px 0;
+  }
+  &__title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  &__products{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin: 0px -16px;
+
+    &-item{
+      width: calc(20% - 32px);
+      height: 230px;
+      margin: 16px;
+    }
+  }
+}

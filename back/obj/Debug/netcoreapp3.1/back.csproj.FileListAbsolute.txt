@@ -35,3 +35,5 @@ D:\projects\domashne\back\obj\Debug\netcoreapp3.1\back.dll
 D:\projects\domashne\back\obj\Debug\netcoreapp3.1\back.pdb
 D:\projects\domashne\back\obj\Debug\netcoreapp3.1\back.genruntimeconfig.cache
 D:\projects\domashne\back\obj\Debug\netcoreapp3.1\back.csproj.CopyComplete
+D:\projects\domashne\back\bin\Debug\netcoreapp3.1\package-lock.json
+D:\projects\domashne\back\bin\Debug\netcoreapp3.1\package.json

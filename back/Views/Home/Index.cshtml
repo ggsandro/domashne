@@ -2,7 +2,48 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="search">
+    <div class="container">
+    <div class="search__wrapper">
+        <form class="search__form" action="/search" method="post">
+        <div class="search__product">
+            <input type="text" placeholder="Молоко" class="search__input">
+        </div>
+        <div class="search__place">
+            <input type="text" placeholder="Вся Україна" class="search__input">
+        </div>
+        <div class="search__submit">
+            <input type="submit" class="search__submit-btn" value="Пошук">
+        </div>
+        </form>
+    </div>
+    </div>
+</section>
+
+<section class="near">
+    <div class="container">
+    <div class="near__wrapper">
+        <h2 class="near__title">Поруч з Вами продають:</h2>
+        <div class="near__products">
+        
+        <div class="near__products-item">
+
+            <section class="card">
+            <a href="" class="card__overlay">
+                <div class="card__wrapper">
+                <h2 class="card__title">Творог домашній</h2>
+                <div class="card__info">
+                    <p class="card__info-price">150 грн</p>
+                    <p class="card__info-place">Боярка, Київська обл.</p>
+                </div>
+                </div>
+            </a>
+            </section>
+
+        </div>
+
+
+        </div>
+    </div>
+    </div>
+</section>
